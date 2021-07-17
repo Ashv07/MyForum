@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyForum|About Us</title>
+    <link rel="stylesheet" href="./CSS/about_style.css" />
+    <link rel="stylesheet" href="./CSS/login_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="Home.html"
+          ><img src="./Images/logo.png" alt="MyForum.com"
+        /></a>
+      </div>
+      <!-- Nav-Menu -->
+      <div id="navlist">
+        <ul>
+          <li class="navitems"><a href="Home.html">Home</a></li>
+          <li class="navitems"><a href="Forum.html">Forum</a></li>
+          <li class="navitems" id="active">
+            <a href="About.html">About</a>
+          </li>
+          <li class="navitems"><a href="Rules.html">Rules</a></li>
+          <li class="navitems"><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Registeration -->
+      <div id="reg">
+        <a href="#" id="myBtn1"
+          ><img src="./Images/icons/login.png" alt="Log in"
+        /></a>
+        <a href="#" id="myBtn2"><span>Log In</span></a>
+      </div>
+      <!-- The modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content animate">
+          <span class="close">&times;</span>
+          <div class="login-page">
+            <div class="form">
+              <form class="login-form">
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <button>login</button>
+                <p class="message">
+                  Not registered? <a href="#">Create an account</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- About section -->
+    <div id="container">
+      <section id="head" class="center">
+        <h2>About MyForum</h2>
+      </section>
+      <div id="vid">
+        <video autoplay muted loop>
+          <source src="./Images/Snowflakes.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <section id="content">
+        <p>
+          MyForum is a question forum where you can ask any question or start a
+          discussion on any topic with the members of Forum. It is a rapidly
+          growing community forum with more than 50K users in just 2 months. We
+          want to make a community of people around the globe with similar
+          interests. Check the site rules to avoid any ban or removal of your
+          post.
+        </p>
+        <p>
+          Be polite and contribute to the community by helping others with your
+          experience and knowledge. Our aim is to become a useful resource for
+          people around the world so that they can have a easy way to find
+          answers of their questions. Thank you for joining our community and
+          supporting us.
+        </p>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="foot">
+      <div>
+        <div class="icons">
+          <a href="#"
+            ><img src="./Images/icons/fb.png" alt="Facebook.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/twitter.png" alt="Twitter.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/linkedin.png" alt="Linkedin.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/insta.png" alt="Instagram.com"
+          /></a>
+        </div>
+        Copyright &copy; My Forum 2021 | All rights reserved
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

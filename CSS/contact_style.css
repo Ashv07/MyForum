@@ -1,0 +1,187 @@
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Abel", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #0e0b16;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+/* Navigation Bar: Logo */
+#logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 34px;
+}
+
+#logo img {
+  height: 51px;
+  margin: 0px 5px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar::before {
+  content: "";
+  position: absolute;
+  background-color: #0e0b16;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#navbar ul li {
+  list-style: none;
+  color: #e7dfdd;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #e7dfdd;
+}
+
+#navbar ul li a:hover {
+  text-shadow: 2px 2px 5px #a239ca;
+}
+
+/* Navigation Bar: Log In */
+
+#reg {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 2px;
+}
+
+#reg a {
+  text-decoration: none;
+}
+
+a span:hover {
+  text-shadow: 2px 2px 5px #a239ca;
+}
+
+span {
+  padding: 0px 7px;
+  color: #e7dfdd;
+  font-size: 1.3rem;
+}
+
+/* Contact Form */
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 200px 50px;
+}
+.text {
+  margin: 10px 10px;
+}
+
+.form2{
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  background-color: #0e0b16;
+  border: 2px solid #e7dfdd;
+  padding: 10px 10px;
+  margin: 8px 3px;
+  width: 500px;
+  color: #e7dfdd;
+  font-size: 1rem;
+}
+
+.btn {
+  margin: 3px 5px;
+  padding: 3px 5px;
+  font-size: 1.1rem;
+  color: #e7dfdd;
+  background-color: #0e0b16;
+  border: 2px solid #e7dfdd;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #4717f6;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Footer */
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0e0b16;
+  color: #e7dfdd;
+  padding: 10px 2px;
+  height: 100px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+.foot div {
+  font-size: 1.3rem;
+}
+
+/* Utilities */
+
+#active a:visited {
+  color: #9b7ea7;
+  text-decoration: underline;
+}
+
+h2 {
+  color: #e7dfdd;
+  font-size: 4rem;
+}
+
+hr {
+  height: 2px;
+  background-color: #e7dfdd;
+}
+.center {
+  text-align: center;
+}

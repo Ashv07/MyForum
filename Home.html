@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyForum|Home</title>
+    <link rel="stylesheet" href="./CSS/home_style.css" />
+    <link rel="stylesheet" href="./CSS/login_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="Home.html"
+          ><img src="./Images/logo.png" alt="MyForum.com"
+        /></a>
+      </div>
+      <!-- Nav-Menu -->
+      <div id="navlist">
+        <ul>
+          <li class="navitems" id="active"><a href="Home.html">Home</a></li>
+          <li class="navitems"><a href="Forum.html">Forum</a></li>
+          <li class="navitems"><a href="About.html">About</a></li>
+          <li class="navitems"><a href="Rules.html">Rules</a></li>
+          <li class="navitems"><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Registeration -->
+      <div id="reg">
+        <a href="#" id="myBtn1"
+          ><img src="./Images/icons/login.png" alt="Log in"
+        /></a>
+        <a href="#" id="myBtn2"><span>Log In</span></a>
+      </div>
+      <!-- The modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content animate">
+          <span class="close">&times;</span>
+          <div class="login-page">
+            <div class="form">
+              <form class="login-form">
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <button>login</button>
+                <p class="message">
+                  Not registered? <a href="#">Create an account</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Main content -->
+    <div class="bg-img1">
+      <div class="caption">
+        <span class="border"> Connect with people around the world </span>
+      </div>
+    </div>
+    <div id="explore">
+      <h2 class="center">Explore the Forum<a href="Forum.html">+</a></h2>
+      <p class="center">
+        Browse different categories, help people with their problems, develop
+        new hobbies. Life is short so don't hesitate to ask what's on your mind.
+      </p>
+    </div>
+    <div class="bg-img2">
+      <div class="caption">
+        <span class="border"> Ask what's on your mind </span>
+      </div>
+    </div>
+    <div class="bg-img3">
+      <div class="caption">
+        <span class="border"> Share your knowledge </span>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="foot">
+      <div>
+        <div class="icons">
+          <a href="#"
+            ><img src="./Images/icons/fb.png" alt="Facebook.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/twitter.png" alt="Twitter.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/linkedin.png" alt="Linkedin.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/insta.png" alt="Instagram.com"
+          /></a>
+        </div>
+        Copyright &copy; My Forum 2021 | All rights reserved
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

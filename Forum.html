@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyForum|Forum</title>
+    <link rel="stylesheet" href="./CSS/forum_style.css" />
+    <link rel="stylesheet" href="./CSS/login_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="Home.html"
+          ><img src="./Images/logo.png" alt="MyForum.com"
+        /></a>
+      </div>
+      <!-- Nav-Menu -->
+      <div id="navlist">
+        <ul>
+          <li class="navitems"><a href="Home.html">Home</a></li>
+          <li class="navitems" id="active">
+            <a href="Forum.html">Forum</a>
+          </li>
+          <li class="navitems"><a href="About.html">About</a></li>
+          <li class="navitems"><a href="Rules.html">Rules</a></li>
+          <li class="navitems"><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Registeration -->
+      <div id="reg">
+        <a href="#" id="myBtn1"
+          ><img src="./Images/icons/login.png" alt="Log in"
+        /></a>
+        <a href="#" id="myBtn2"><span>Log In</span></a>
+      </div>
+      <!-- The modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content animate">
+          <span class="close">&times;</span>
+          <div class="login-page">
+            <div class="form">
+              <form class="login-form">
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <button>login</button>
+                <p class="message">
+                  Not registered? <a href="#">Create an account</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Forum -->
+    <div class="container">
+      <h1 class="center">Explore the Forum!</h1>
+      <div id="search">
+        <div>
+          <span>Forum</span>
+        </div>
+        <div>
+          <input type="text" name="search" placeholder="Search..." />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+      <hr />
+      <div class="category">
+        <div class="card">
+          <a href="Posts.html"
+            ><img src="Images/img4.jpg" class="card-img" alt="..."
+          /></a>
+          <div class="card-body center">
+            <a href="Posts.html">Movies</a>
+            <p class="card-text">
+              Discuss about your favourite movies. Ask your questions and see
+              what's going on in the entertainment world.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#"
+            ><img src="Images/img5.jpg" class="card-img" alt="..."
+          /></a>
+          <div class="card-body center">
+            <a href="#">Fashion</a>
+            <p class="card-text">
+              Discuss about different fashion trends. Ask your questions and see
+              what's going on in the fashion world.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#"
+            ><img src="Images/img6.jpg" class="card-img" alt="..."
+          /></a>
+          <div class="card-body center">
+            <a href="#">Photography</a>
+            <p class="card-text">
+              Discuss about different photography trends. Ask your questions and
+              see what's going on in the photography world.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#"
+            ><img src="Images/img7.jpg" class="card-img" alt="..."
+          /></a>
+          <div class="card-body center">
+            <a href="#">Cooking</a>
+            <p class="card-text">
+              Discuss about different cooking techniques and recipes. Ask your
+              questions and see what's going on in the cooking world.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#"
+            ><img src="Images/img8.jpg" class="card-img" alt="..."
+          /></a>
+          <div class="card-body center">
+            <a href="#">Travel</a>
+            <p class="card-text">
+              Discuss about different travelling places. Ask your questions and
+              see what's going on in the world.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#"
+            ><img src="Images/img9.jpg" class="card-img" alt="..."
+          /></a>
+          <div class="card-body center">
+            <a href="#">Sports</a>
+            <p class="card-text">
+              Discuss about different sports matches around the world. Ask your
+              questions and see what's going on in the sports world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="foot">
+      <div>
+        <div class="icons">
+          <a href="#"
+            ><img src="./Images/icons/fb.png" alt="Facebook.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/twitter.png" alt="Twitter.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/linkedin.png" alt="Linkedin.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/insta.png" alt="Instagram.com"
+          /></a>
+        </div>
+        Copyright &copy; My Forum 2021 | All rights reserved
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

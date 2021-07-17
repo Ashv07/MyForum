@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyForum|Forum</title>
+    <link rel="stylesheet" href="./CSS/forum_style.css" />
+    <link rel="stylesheet" href="./CSS/login_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="Home.html"
+          ><img src="./Images/logo.png" alt="MyForum.com"
+        /></a>
+      </div>
+      <!-- Nav-Menu -->
+      <div id="navlist">
+        <ul>
+          <li class="navitems"><a href="Home.html">Home</a></li>
+          <li class="navitems" id="active"><a href="Forum.html">Forum</a></li>
+          <li class="navitems"><a href="About.html">About</a></li>
+          <li class="navitems"><a href="Rules.html">Rules</a></li>
+          <li class="navitems"><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Registeration -->
+      <div id="reg">
+        <a href="#" id="myBtn1"
+          ><img src="./Images/icons/login.png" alt="Log in"
+        /></a>
+        <a href="#" id="myBtn2"><span>Log In</span></a>
+      </div>
+      <!-- The modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content animate">
+          <span class="close">&times;</span>
+          <div class="login-page">
+            <div class="form">
+              <form class="login-form">
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <button>login</button>
+                <p class="message">
+                  Not registered? <a href="#">Create an account</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Forum -->
+    <div class="container">
+      <h1 class="center">Explore the Forum!</h1>
+      <div id="search">
+        <div>
+          <ul class="breadcrumb">
+            <li><a href="Forum.html">Forum</a></li>
+            <li>Movies</li>
+          </ul>
+        </div>
+        <div>
+          <input type="text" name="search" placeholder="Search..." />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+      <hr />
+      <div class="sort-create">
+        <div id="sorting">
+          <label for="sort">Sort by:&nbsp;</label>
+          <select name="sort" id="sort">
+            <option value="mw">Most Viewed</option>
+            <option value="ml">Most Liked</option>
+            <option value="new">New</option>
+            <option value="mc">Most Comments</option>
+          </select>
+        </div>
+        <div id="create">
+          <button id="create_post">Create a post</button>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <!-- Post table -->
+    <div class="table">
+      <table>
+        <tr>
+          <th style="width: 70%"></th>
+          <th><i class="fa fa-comment"></i></th>
+          <th><i class="fa fa-heart"></i></th>
+          <th><i class="fa fa-eye"></i></th>
+          <th>Posted on</th>
+        </tr>
+        <tr>
+          <td>
+            <a class="title" href="Comments.html"
+              >What is your favourite movie of all time?</a
+            >
+            <span>posted by&nbsp;<a class="user" href="#">Admin</a></span>
+          </td>
+          <td class="center">50</td>
+          <td class="center">150</td>
+          <td class="center">200</td>
+          <td class="center">10 Jul 2021</td>
+        </tr>
+        <tr>
+          <td>
+            <a class="title" href="#"
+              >Which movie has the best villain of all time?</a
+            >
+            <span>posted by&nbsp;<a class="user" href="#">User420</a></span>
+          </td>
+          <td class="center">16</td>
+          <td class="center">40</td>
+          <td class="center">107</td>
+          <td class="center">11 Jul 2021</td>
+        </tr>
+        <tr>
+          <td>
+            <a class="title" href="#">What are some under-rated movies?</a>
+            <span>posted by&nbsp;<a class="user" href="#">User25</a></span>
+          </td>
+          <td class="center">11</td>
+          <td class="center">20</td>
+          <td class="center">50</td>
+          <td class="center">05 Jul 2021</td>
+        </tr>
+        <tr>
+          <td>
+            <a class="title" href="#"
+              >Who is your favourite actor and actress?</a
+            >
+            <span>posted by&nbsp;<a class="user" href="#">Random_user</a></span>
+          </td>
+          <td class="center">30</td>
+          <td class="center">40</td>
+          <td class="center">47</td>
+          <td class="center">12 Jul 2021</td>
+        </tr>
+        <tr>
+          <td>
+            <a class="title" href="#">Which movie do you hate the most?</a>
+            <span>posted by&nbsp;<a class="user" href="#">User125</a></span>
+          </td>
+          <td class="center">5</td>
+          <td class="center">10</td>
+          <td class="center">20</td>
+          <td class="center">13 Jul 2021</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Footer -->
+    <footer class="foot">
+      <div>
+        <div class="icons">
+          <a href="#"
+            ><img src="./Images/icons/fb.png" alt="Facebook.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/twitter.png" alt="Twitter.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/linkedin.png" alt="Linkedin.com"
+          /></a>
+          <a href="#"
+            ><img src="./Images/icons/insta.png" alt="Instagram.com"
+          /></a>
+        </div>
+        Copyright &copy; My Forum 2021 | All rights reserved
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

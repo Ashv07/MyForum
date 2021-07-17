@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyForum|Forum</title>
+    <link rel="stylesheet" href="./CSS/forum_style.css" />
+    <link rel="stylesheet" href="./CSS/login_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Alignment for this page -->
+    <style>
+        #search{
+            justify-content: space-around;
+        }
+
+        input{
+            border-bottom: 1px solid #0e0b16;
+        }
+
+        #c-search{
+          margin-left: 125px;
+        }
+    </style>
+ </head>
+ <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <!-- Logo -->
+        <div id="logo">
+          <a href="Home.html"
+            ><img src="./Images/logo.png" alt="MyForum.com"
+          /></a>
+        </div>
+        <!-- Nav-Menu -->
+        <div id="navlist">
+          <ul>
+             <li class="navitems"><a href="Home.html">Home</a></li>
+             <li class="navitems" id="active"><a href="Forum.html">Forum</a></li>
+             <li class="navitems"><a href="About.html">About</a></li>
+             <li class="navitems"><a href="Rules.html">Rules</a></li>
+             <li class="navitems"><a href="Contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Registeration -->
+      <div id="reg">
+        <a href="#" id="myBtn1"
+          ><img src="./Images/icons/login.png" alt="Log in"
+        /></a>
+        <a href="#" id="myBtn2"><span>Log In</span></a>
+      </div>
+      <!-- The modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content animate">
+          <span class="close">&times;</span>
+          <div class="login-page">
+            <div class="form">
+              <form class="login-form">
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <button>login</button>
+                <p class="message">
+                  Not registered? <a href="#">Create an account</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Forum -->
+    <div class="container">
+      <h1 class="center">Explore the Forum!</h1>
+      <div id="search">
+        <div>
+          <ul class="breadcrumb">
+            <li><a href="Forum.html">Forum</a></li>
+            <li><a href="Posts.html">Movies</a></li>
+            <li>Which is your favourite movie of all time?</li>
+          </ul>
+        </div>
+        <div id="c-search">
+          <input type="text" name="search" placeholder="Search..." />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+      <!-- Discussion Section -->
+      <div class="discussion">
+        <section id="section">
+          <div id="post-head">
+            <div>
+              <a href="#"><i class="fa fa-user"></i></a>
+              <a href="#" class="user_id">Admin</a>
+            </div>
+              <div><span id="date">Jul 10, 2021</span></div>
+            </div>
+            <div id="heading">
+              <h2>Which is your favourite movie of all time?</h2>
+            </div>
+            <div>
+              <i class="fa fa-comment">&nbsp;50</i>
+              <i class="fa fa-heart">&nbsp;150</i>
+                <i class="fa fa-eye">&nbsp;200</i>
+              </div>
+            <textarea name="comments" placeholder="Write your comment here..."></textarea>
+            <button id="c-btn">Publish</button>
+            <span class="bold underline">Comments</span>
+            <div id="com">
+              <div class="comments">
+                <p class="bold">By&nbsp;<a href="#"><i class="fa fa-user"></i></a><a href="#" class="user_id">User113</a></p>
+                <p class="bold">My favourite movie is Avengers: Infinity War. It has a very gripping story with non-stop action.</p>
+              </div>
+              <div class="comments">
+                <p class="bold">By&nbsp;<a href="#"><i class="fa fa-user"></i></a><a href="#" class="user_id">User23</a></p>
+                <p class="bold">I love The Shawshank Redemption. Everyone gave a brilliant performance in that movie.</p>
+              </div>
+              <div class="comments">
+                <p class="bold">By&nbsp;<a href="#"><i class="fa fa-user"></i></a><a href="#" class="user_id">User420</a></p>
+                <p class="bold">I love watching Harry Potter series. I grew up watching those movies and now I'm thinking of reading the novels.</p>
+              </div>
+              <div class="comments">
+                <p class="bold">By&nbsp;<a href="#"><i class="fa fa-user"></i></a><a href="#" class="user_id">User200</a></p>
+                <p class="bold">The Dark Knight is one of the best movie ever made. Heath Ledger gave a legendary performance in that movie.</p>
+              </div>
+              <div class="comments">
+                <p class="bold">By&nbsp;<a href="#"><i class="fa fa-user"></i></a><a href="#" class="user_id">User007</a></p>
+                <p class="bold">I just love watching Bond movies.</p>
+              </div>
+           </div>
+          </section>
+          <aside id="aside">
+           <button id="like" class="a-btn">Like post&nbsp;<i class="fa fa-heart"></i></button>
+           <button id="follow" class="a-btn">Follow user&nbsp;<i class="fa fa-bell"></i></button>
+           <div class="recommend">
+             <div><span class="center bold">Similar posts</span></div>
+             <ul>
+                 <li><a href="#" class="sim">Which movie has the best villain of all time?</a></li>
+                 <li><a href="#" class="sim">What are some under-rated movies?</a></li>
+                 <li><a href="#" class="sim">Who is your favourite actor and actress?</a></li>
+                 <li><a href="#" class="sim">Which movie do you hate the most?</a></li>
+             </ul>
+           </div>
+           <div class="recommend">
+            <div><span class="center bold">Other Categories</span></div>
+            <ul>
+                <li><a href="#" class="sim">Fashion</a></li>
+                <li><a href="#" class="sim">Photography</a></li>
+                <li><a href="#" class="sim">Cooking</a></li>
+                <li><a href="#" class="sim">Travel</a></li>
+                <li><a href="#" class="sim">Sports</a></li>
+            </ul>
+          </div>
+       </aside>
+    </div>
+    <!-- Footer -->
+   <footer class="foot">
+      <div>
+        <div class="icons">
+          <a href="#"><img src="./Images/icons/fb.png" alt="Facebook.com"/></a>
+          <a href="#"><img src="./Images/icons/twitter.png" alt="Twitter.com"/></a>
+          <a href="#"><img src="./Images/icons/linkedin.png" alt="Linkedin.com"/></a>
+          <a href="#"><img src="./Images/icons/insta.png" alt="Instagram.com"/></a>
+        </div>
+        Copyright &copy; My Forum 2021 | All rights reserved
+      </div>
+    </footer>
+    <script src="main.js"></script>
+ </body>
+</html>
