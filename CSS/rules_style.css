@@ -12,7 +12,7 @@ html {
 
 body {
   height: 100%;
-  background-color: #0e0b16;
+  background-color: black;
 }
 
 /* Navigation Bar */
@@ -33,7 +33,8 @@ body {
 }
 
 #logo img {
-  height: 51px;
+  height: 80px;
+  width: 120px;
   margin: 0px 5px;
 }
 
@@ -49,7 +50,7 @@ body {
 #navbar::before {
   content: "";
   position: absolute;
-  background-color: #0e0b16;
+  background-color: black;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -57,7 +58,7 @@ body {
 
 #navbar ul li {
   list-style: none;
-  color: #e7dfdd;
+  color: white;
   font-size: 1.3rem;
 }
 
@@ -66,11 +67,11 @@ body {
   padding: 3px 22px;
   border-radius: 20px;
   text-decoration: none;
-  color: #e7dfdd;
+  color: white;
 }
 
 #navbar ul li a:hover {
-  text-shadow: 2px 2px 5px #a239ca;
+  text-shadow: 2px 2px 5px #c19434;
 }
 
 /* Navigation Bar: Log In */
@@ -88,12 +89,12 @@ body {
 }
 
 a span:hover {
-  text-shadow: 2px 2px 5px #a239ca;
+  text-shadow: 2px 2px 5px #c19434;
 }
 
 span {
   padding: 0px 7px;
-  color: #e7dfdd;
+  color: white;
   font-size: 1.3rem;
 }
 
@@ -123,9 +124,9 @@ span {
 
 .item1,
 .item2 {
-  background-color: #0e0b16;
-  color: #e7dfdd;
-  border: 2px solid #e7dfdd;
+  background-color: #000000e0;
+  color: white;
+  border: 2px solid #000000e0;
   padding: 10px 10px;
   margin: 10px 10px;
   font-size: 2rem;
@@ -171,8 +172,8 @@ span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #0e0b16;
-  color: #e7dfdd;
+  background-color: black;
+  color: white;
   padding: 10px 2px;
   height: 100px;
 }
@@ -184,23 +185,23 @@ span {
   gap: 11px;
 }
 
-.foot div {
+.foot div{
   font-size: 1.3rem;
 }
 
 /* Utilities */
 
 #active a:visited {
-  color: #9b7ea7;
+  color: #c19434;
   text-decoration: underline;
 }
 
 .heading {
-  color: #e7dfdd;
+  color: white;
   font-weight: bolder;
   font-size: 2rem;
-  border: 2px solid #e7dfdd;
-  background-color: #0e0b16;
+  border: 2px solid #000000e0;
+  background-color: #000000e0;
   margin: 60px 10px;
 }
 

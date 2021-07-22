@@ -33,7 +33,8 @@ body {
 }
 
 #logo img {
-  height: 51px;
+  height: 80px;
+  width: 120px;
   margin: 0px 5px;
 }
 
@@ -49,7 +50,7 @@ body {
 #navbar::before {
   content: "";
   position: absolute;
-  background-color: #0e0b16;
+  background-color: #34421e;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -57,7 +58,7 @@ body {
 
 #navbar ul li {
   list-style: none;
-  color: #e7dfdd;
+  color: white;
   font-size: 1.3rem;
 }
 
@@ -66,11 +67,11 @@ body {
   padding: 3px 22px;
   border-radius: 20px;
   text-decoration: none;
-  color: #e7dfdd;
+  color: white;
 }
 
 #navbar ul li a:hover {
-  text-shadow: 2px 2px 5px #a239ca;
+  text-shadow: 2px 2px 5px #c19434;
 }
 
 /* Navigation Bar: Log In */
@@ -88,12 +89,12 @@ body {
 }
 
 a span:hover {
-  text-shadow: 2px 2px 5px #a239ca;
+  text-shadow: 2px 2px 5px #c19434;
 }
 
 span {
   padding: 0px 7px;
-  color: #e7dfdd;
+  color: white;
   font-size: 1.3rem;
 }
 
@@ -234,8 +235,8 @@ ul.breadcrumb li a:hover {
 #create_post{
   height: 30px;
   width: 100px;
-  border: 2px solid orangered;
-  background-color: orangered;
+  border: 2px solid #c19434;
+  background-color: #c19434;
   color: #0e0b16;
   font-size: 1rem;
   padding: 5px 5px;
@@ -244,7 +245,7 @@ ul.breadcrumb li a:hover {
 }
 
 #create_post:hover{
-  background-color: #e7dfdd;
+  background-color: #c19434e3;
 }
 
 /* Table-style */
@@ -272,7 +273,7 @@ ul.breadcrumb li a:hover {
 }
 
 .table a:hover{
-  color: #4717f6;
+  color: white;
 }
 
 table{
@@ -280,7 +281,7 @@ table{
   height: 400px;
   border: 1px solid #0e0b16;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-  background-color: #e7dfdd;
+  background-color: #c19434ba;
   margin: 40px 40px;
 }
 
@@ -351,7 +352,7 @@ td span{
 
 textarea{
   width: 100%;
-  height: 100px;
+  height: 200px;
   border: 2px solid #0e0b16;
   border-radius: 5px;
   margin: 20px 0px;
@@ -359,29 +360,30 @@ textarea{
 
 #c-btn{
   display: block;
-  border: 1px solid orangered;
-  background-color: orangered;
+  border: 1px solid #c19434;
+  background-color: #c19434;
   font-weight: bold;
   color: #0e0b16;
   font-size: 1rem;
   width: 70px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 
 #c-btn:hover{
-  background-color: #e7dfdd;
+  background-color: #c19434e3;
 }
 
 #com{
-  margin: 30px 0px;
+  margin: 50px 0px;
 }
 
 .comments{
   margin: 10px 10px;
-  padding: 5px 5px;
-  background-color: blanchedalmond;
+  padding: 15px 15px;
+  background-color: #c19434;
   word-wrap: break-word;
+  border-radius: 5px;
 }
 
 /* Recommendation section */
@@ -389,8 +391,8 @@ textarea{
 .a-btn{
   display: block;
   width: 100%;
-  border: 1px solid orangered;
-  background-color: orangered;
+  border: 1px solid #c19434;
+  background-color: #c19434;
   font-weight: bold;
   color: #0e0b16;
   font-size: 1rem;
@@ -398,7 +400,7 @@ textarea{
 }
 
 .a-btn:hover{
-  background-color: #e7dfdd;
+  background-color: #c19434e3;
 }
 
 .sim{
@@ -407,7 +409,7 @@ textarea{
 }
 
 .sim:hover{
-  color: orangered;
+  color: #c19434;
   font-weight: bold;
 }
 
@@ -429,8 +431,8 @@ textarea{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #0e0b16;
-  color: #e7dfdd;
+  background-color: #34421e;
+  color: white;
   padding: 10px 2px;
   height: 100px;
 }
@@ -449,7 +451,7 @@ textarea{
 /* Utilities */
 
 #active a:visited{
-  color: #9b7ea7;
+  color: #c19434;
   text-decoration: underline;
 }
 
@@ -473,6 +475,14 @@ hr{
   width: 50%;
   align-self: center;
   border: 0.5px solid #0e0b16;
+}
+
+#foot-line{
+  height: 5px;
+  background-color: #c19434;
+  width: 100%;
+  border: none;
+  margin-top: 50px;
 }
 
 .bold{

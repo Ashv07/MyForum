@@ -12,7 +12,7 @@ html {
 
 body {
   height: 100%;
-  background-color: #0e0b16;
+  background-color: white;
 }
 
 /* Navigation Bar */
@@ -33,7 +33,8 @@ body {
 }
 
 #logo img {
-  height: 51px;
+  height: 80px;
+  width: 120px;
   margin: 0px 5px;
 }
 
@@ -49,7 +50,7 @@ body {
 #navbar::before {
   content: "";
   position: absolute;
-  background-color: #0e0b16;
+  background-color: #34421e;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -57,7 +58,7 @@ body {
 
 #navbar ul li {
   list-style: none;
-  color: #e7dfdd;
+  color: white;
   font-size: 1.3rem;
 }
 
@@ -66,11 +67,11 @@ body {
   padding: 3px 22px;
   border-radius: 20px;
   text-decoration: none;
-  color: #e7dfdd;
+  color: white;
 }
 
 #navbar ul li a:hover {
-  text-shadow: 2px 2px 5px #a239ca;
+  text-shadow: 2px 2px 5px #c19434;
 }
 
 /* Navigation Bar: Log In */
@@ -88,12 +89,12 @@ body {
 }
 
 a span:hover {
-  text-shadow: 2px 2px 5px #a239ca;
+  text-shadow: 2px 2px 5px #c19434;
 }
 
 span {
   padding: 0px 7px;
-  color: #e7dfdd;
+  color: white;
   font-size: 1.3rem;
 }
 
@@ -116,12 +117,12 @@ span {
 
 input,
 textarea {
-  background-color: #0e0b16;
-  border: 2px solid #e7dfdd;
+  background-color: white;
+  border: 2px solid #c19434;
   padding: 10px 10px;
   margin: 8px 3px;
   width: 500px;
-  color: #e7dfdd;
+  color: black;
   font-size: 1rem;
 }
 
@@ -129,15 +130,15 @@ textarea {
   margin: 3px 5px;
   padding: 3px 5px;
   font-size: 1.1rem;
-  color: #e7dfdd;
-  background-color: #0e0b16;
-  border: 2px solid #e7dfdd;
+  color: black;
+  background-color: white;
+  border: 2px solid #c19434;
   text-align: center;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: #4717f6;
+  background-color: #c19434;
   border-radius: 5px;
   border: none;
 }
@@ -149,8 +150,8 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #0e0b16;
-  color: #e7dfdd;
+  background-color: #34421e;
+  color: white;
   padding: 10px 2px;
   height: 100px;
 }
@@ -162,25 +163,24 @@ textarea {
   gap: 11px;
 }
 
-.foot div {
+.foot div{
   font-size: 1.3rem;
 }
-
 /* Utilities */
 
 #active a:visited {
-  color: #9b7ea7;
+  color: #c19434;
   text-decoration: underline;
 }
 
 h2 {
-  color: #e7dfdd;
+  color: #34421e;
   font-size: 4rem;
 }
 
 hr {
   height: 2px;
-  background-color: #e7dfdd;
+  background-color: #c19434;
 }
 .center {
   text-align: center;

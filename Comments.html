@@ -28,7 +28,7 @@
         }
 
         #c-search{
-          margin-left: 125px;
+          margin-left: 250px;
         }
     </style>
  </head>
@@ -57,21 +57,40 @@
           ><img src="./Images/icons/login.png" alt="Log in"
         /></a>
         <a href="#" id="myBtn2"><span>Log In</span></a>
+        <a href="#" id="myBtn3"><span>Sign Up</span></a>
       </div>
       <!-- The modal -->
-      <div id="myModal" class="modal">
+      <div id="myModal1" class="modal">
         <!-- Modal content -->
         <div class="modal-content animate">
           <span class="close">&times;</span>
-          <div class="login-page">
+          <div class="registeration-page">
             <div class="form">
-              <form class="login-form">
+              <form class="registeration-form">
                 <input type="text" placeholder="username" />
                 <input type="password" placeholder="password" />
                 <button>login</button>
                 <p class="message">
-                  Not registered? <a href="#">Create an account</a>
+                  <a href="#">Forgot Password?</a>
                 </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The modal -->
+      <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content animate">
+          <span class="close">&times;</span>
+          <div class="registeration-page">
+            <div class="form">
+              <form class="registeration-form">
+                <input type="text" placeholder="username">
+                <input type="email" placeholder="e-mail">
+                <input type="password" placeholder="password">
+                <input type="password" placeholder="confirm password">
+                <button>Sign Up</button>
               </form>
             </div>
           </div>
@@ -112,7 +131,9 @@
               <i class="fa fa-heart">&nbsp;150</i>
                 <i class="fa fa-eye">&nbsp;200</i>
               </div>
-            <textarea name="comments" placeholder="Write your comment here..."></textarea>
+            <textarea id="addTxt" name="comments" placeholder="Write your comment here..."></textarea>
+            <p class="bold">Note: You can also post your comments anonymously, but we recommend 
+              that you post your comments after signing in to your account.</p>
             <button id="c-btn">Publish</button>
             <span class="bold underline">Comments</span>
             <div id="com">
@@ -162,6 +183,7 @@
           </div>
        </aside>
     </div>
+    <hr id="foot-line">
     <!-- Footer -->
    <footer class="foot">
       <div>
