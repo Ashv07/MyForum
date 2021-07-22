@@ -58,12 +58,6 @@ window.onclick = function (event) {
   }
 };
 
-// window.onclick = function (event) {
-//   if (event.target == modal2) {
-//     modal2.style.display = "none";
-//   }
-// };
-
 // Adding comments anonymously.
 
 showComments();
@@ -127,7 +121,4 @@ function showComments() {
   if (commentsObj.length != 0) {
     commentsElm.innerHTML = html1 + html2;
   }
-  //else {
-  //   notesElm.innerHTML = `Nothing to show! Use "Add a Note" section above to add notes.`;
-  // }
 }
